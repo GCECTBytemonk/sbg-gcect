@@ -1,0 +1,144 @@
+<nav
+  class="fixed top-0 left-0 z-50 w-full transition-all duration-500 ease-out"
+  [class.pt-4]="isScrolled"
+>
+  <div
+    class="mx-auto flex h-16 items-center justify-between px-6 transition-all duration-500 ease-out"
+    [class.max-w-6xl]="isScrolled"
+    [class.rounded-2xl]="isScrolled"
+    [class.border]="isScrolled"
+    [class.border-white/10]="isScrolled"
+    [class.bg-white/5]="isScrolled"
+    [class.backdrop-blur-xl]="isScrolled"
+    [class.shadow-lg]="isScrolled"
+  >
+    <!-- Logo -->
+    <a href="#home" class="flex items-center gap-1">
+      <img
+        src="/exp.svg"
+        alt="SBG"
+        class="h-8 w-8 object-contain"
+      />
+
+      <span class="text-lg font-semibold text-white">
+        AWS SBG GCECT
+    </span>
+    </a>
+
+    <!-- Desktop Navigation -->
+    <div class="hidden items-center gap-10 md:flex">
+      <a
+        href="#home"
+        class="text-sm text-white/70 transition-colors hover:text-white"
+      >
+        Home
+      </a>
+
+      <a
+        href="#about"
+        class="text-sm text-white/70 transition-colors hover:text-white"
+      >
+        About
+      </a>
+
+      <a
+        href="#events"
+        class="text-sm text-white/70 transition-colors hover:text-white"
+      >
+        Events
+      </a>
+
+      <a
+        href="#resources"
+        class="text-sm text-white/70 transition-colors hover:text-white"
+      >
+        Resources
+      </a>
+
+      <a
+        href="#team"
+        class="text-sm text-white/70 transition-colors hover:text-white"
+      >
+        Team
+      </a>
+    </div>
+
+    <!-- Desktop Join Us -->
+    <a
+      href="#join"
+      class="hidden text-sm font-semibold text-white transition-colors hover:text-[#43b4ff] md:block"
+    >
+      Join Us
+    </a>
+
+    <!-- Mobile Menu Button -->
+    <button
+      type="button"
+      class="flex h-10 w-10 items-center justify-center text-white md:hidden"
+      (click)="toggleMobileMenu()"
+      [attr.aria-expanded]="mobileMenuOpen"
+      aria-label="Toggle navigation menu"
+    >
+      <span class="text-2xl">
+        {{ mobileMenuOpen ? '×' : '☰' }}
+      </span>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  @if (mobileMenuOpen) {
+    <div
+      class="mx-4 mt-2 rounded-2xl border border-white/10 bg-[#08090D]/95 p-5 shadow-xl backdrop-blur-xl md:hidden"
+    >
+      <nav class="flex flex-col gap-5">
+        <a
+          href="#home"
+          (click)="closeMobileMenu()"
+          class="text-sm text-white/70 transition-colors hover:text-white"
+        >
+          Home
+        </a>
+
+        <a
+          href="#about"
+          (click)="closeMobileMenu()"
+          class="text-sm text-white/70 transition-colors hover:text-white"
+        >
+          About
+        </a>
+
+        <a
+          href="#events"
+          (click)="closeMobileMenu()"
+          class="text-sm text-white/70 transition-colors hover:text-white"
+        >
+          Events
+        </a>
+
+        <a
+          href="#resources"
+          (click)="closeMobileMenu()"
+          class="text-sm text-white/70 transition-colors hover:text-white"
+        >
+          Resources
+        </a>
+
+        <a
+          href="#team"
+          (click)="closeMobileMenu()"
+          class="text-sm text-white/70 transition-colors hover:text-white"
+        >
+          Team
+        </a>
+
+        <a
+          href="#join"
+          (click)="closeMobileMenu()"
+          class="border-t border-white/10 pt-5 text-sm font-semibold text-white"
+        >
+          Join Us
+        </a>
+      </nav>
+    </div>
+  }
+</nav>

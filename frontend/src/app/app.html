@@ -1,0 +1,453 @@
+<app-navbar />
+
+<main>
+
+  <!-- HERO -->
+  <section
+    id="home"
+    class="relative min-h-screen overflow-hidden"
+  >
+
+    <!-- Hero Content -->
+    <div
+      class="relative z-10 mx-auto grid min-h-screen max-w-7xl
+             grid-cols-1 items-center gap-12 px-6 pt-20 lg:grid-cols-2"
+    >
+      <!-- Left -->
+      <div class="max-w-2xl">
+        <p class="mb-6 text-sm font-medium uppercase tracking-[0.3em] text-white/50">
+          AWS Student Builder Group at GCECT
+        </p>
+
+        <h1
+          class="text-5xl font-semibold leading-[1.05] tracking-tight
+                 text-white sm:text-6xl lg:text-7xl"
+        >
+          Build.
+          <br />
+          Learn.
+          <br />
+          <span class="text-[#43b4ff]">Create.</span>
+        </h1>
+
+        <p class="mt-8 max-w-xl text-base leading-7 text-white/60 sm:text-lg">
+          A student-driven community focused on building real systems,
+          exploring cloud technologies, and turning ideas into working
+          products.
+        </p>
+
+        <div class="mt-10 flex flex-wrap gap-4">
+          <a
+            href="#resources"
+            class="rounded-xl bg-white px-6 py-3 text-sm font-medium
+                   text-blue-500 transition-all duration-300
+                   hover:-translate-y-0.5 hover:bg-white/90"
+          >
+            Explore Resources
+          </a>
+
+          <a
+            href="#about"
+            class="rounded-xl border border-white/15 bg-white/5
+                   px-6 py-3 text-sm font-medium text-white
+                   backdrop-blur-md transition-all duration-300
+                   hover:-translate-y-0.5 hover:bg-white/10"
+          >
+            Learn More
+          </a>
+        </div>
+      </div>
+
+      <!-- Right -->
+      <div class="relative flex h-[500px] w-full items-center justify-center">
+      <div class="h-[500px] w-[500px]">
+        <app-paper-background />
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section
+  id="about"
+  class="min-h-screen bg-[#08090D] px-6 py-32 text-white"
+>
+  <div
+    class="mx-auto grid max-w-6xl items-center gap-16 lg:grid-cols-2"
+  >
+
+    <!-- Left: AWS Logo -->
+    <div class="flex items-center justify-center lg:justify-start">
+      <a href="https://aws.amazon.com/what-is-cloud-computing">
+        <img src="https://d0.awsstatic.com/logos/powered-by-aws-white.png" alt="Powered by AWS Cloud Computing" class="h-auto w-auto object-contain" />
+      </a>
+    </div>
+
+    <!-- Right: About Content -->
+    <div>
+      <div class="w-fit max-w-full">
+        <h2
+          class="text-5xl font-semibold tracking-tight md:text-6xl"
+        >
+          Building with AWS.
+        </h2>
+      </div>
+
+      <div class="mt-8 max-w-3xl">
+        <p class="text-lg leading-8 text-white/60">
+          The AWS Student Builder Group at Government College of Engineering and Ceramic Technology 
+          is a student-driven community focused
+          on learning, building, and experimenting with cloud technologies.
+          We bring students together to explore AWS, develop real-world
+          systems, and turn ideas into working products.
+        </p>
+
+        <p class="mt-5 text-lg leading-8 text-white/60">
+          From cloud infrastructure and backend systems to modern applications
+          and open-source projects, SBG provides a space to learn by building
+          and collaborating with other students.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- EVENTS -->
+  <section 
+  id="events" 
+  class="min-h-screen bg-[#08090D] px-6 py-32 text-white" 
+> 
+  <div class="mx-auto max-w-6xl"> 
+
+    <p class="text-sm uppercase tracking-[0.3em] text-white/40"> 
+      Events 
+    </p> 
+ 
+    <h2 class="mt-4 text-5xl font-semibold tracking-tight md:text-6xl"> 
+      Learn by building. 
+    </h2>
+
+    <p class="mt-16 text-sm uppercase tracking-[0.3em] text-[#43b4ff]">
+  Coming Soon
+</p>
+ 
+  </div> 
+</section>
+
+  <!-- PROJECTS -->
+  <section
+  id="resources"
+  class="min-h-screen bg-[#08090D] px-6 py-32 text-white"
+>
+  <div class="mx-auto max-w-6xl">
+
+    <p class="text-sm uppercase tracking-[0.3em] text-white/40">
+      Resources
+    </p>
+
+    <h2 class="mt-4 text-5xl font-semibold tracking-tight md:text-6xl">
+      Learn. Build. Explore.
+    </h2>
+
+    <div class="mt-20 grid gap-x-12 gap-y-16 md:grid-cols-2">
+
+      <!-- AWS Documentation -->
+      <a
+        href="https://docs.aws.amazon.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group border-t border-white pt-8 transition-colors hover:border-[#43b4ff]"
+      >
+        <div class="flex items-start justify-between gap-6">
+          <div>
+            <p class="text-xs uppercase tracking-[0.25em] text-white/40">
+              AWS
+            </p>
+
+            <h3 class="mt-4 text-3xl font-semibold tracking-tight">
+              AWS Documentation
+            </h3>
+
+            <p class="mt-5 max-w-md text-base leading-7 text-white/50">
+              Official service documentation, API references, SDKs,
+              CLI references, guides, and technical resources for AWS.
+            </p>
+          </div>
+
+          <span
+            class="text-2xl text-white/30 transition-transform duration-300 group-hover:translate-x-1 group-hover:text-[#43b4ff]"
+          >
+            ↗
+          </span>
+        </div>
+      </a>
+
+      <!-- AWS Tutorials -->
+      <a
+        href="https://aws.amazon.com/tutorials/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group border-t border-white pt-8 transition-colors hover:border-[#43b4ff]"
+      >
+        <div class="flex items-start justify-between gap-6">
+          <div>
+            <p class="text-xs uppercase tracking-[0.25em] text-white/40">
+              AWS
+            </p>
+
+            <h3 class="mt-4 text-3xl font-semibold tracking-tight">
+              AWS Tutorials
+            </h3>
+
+            <p class="mt-5 max-w-md text-base leading-7 text-white/50">
+              Step-by-step tutorials covering AWS services and
+              real-world cloud development scenarios.
+            </p>
+          </div>
+
+          <span
+            class="text-2xl text-white/30 transition-transform duration-300 group-hover:translate-x-1 group-hover:text-[#43b4ff]"
+          >
+            ↗
+          </span>
+        </div>
+      </a>
+
+      <!-- Hands-on -->
+      <a
+        href="https://aws.amazon.com/getting-started/hands-on/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group border-t border-white pt-8 transition-colors hover:border-[#43b4ff]"
+      >
+        <div class="flex items-start justify-between gap-6">
+          <div>
+            <p class="text-xs uppercase tracking-[0.25em] text-white/40">
+              Hands-on
+            </p>
+
+            <h3 class="mt-4 text-3xl font-semibold tracking-tight">
+              AWS Hands-on Tutorials
+            </h3>
+
+            <p class="mt-5 max-w-md text-base leading-7 text-white/50">
+              Practical, guided tutorials for actually building and
+              deploying applications on AWS.
+            </p>
+          </div>
+
+          <span
+            class="text-2xl text-white/30 transition-transform duration-300 group-hover:translate-x-1 group-hover:text-[#43b4ff]"
+          >
+            ↗
+          </span>
+        </div>
+      </a>
+
+      <!-- AWS Developer Learning -->
+      <a
+        href="https://aws.amazon.com/developer/learning/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group border-t border-white pt-8 transition-colors hover:border-[#43b4ff]"
+      >
+        <div class="flex items-start justify-between gap-6">
+          <div>
+            <p class="text-xs uppercase tracking-[0.25em] text-white/40">
+              Developers
+            </p>
+
+            <h3 class="mt-4 text-3xl font-semibold tracking-tight">
+              AWS Developer Learning
+            </h3>
+
+            <p class="mt-5 max-w-md text-base leading-7 text-white/50">
+              Developer tutorials, videos, workshops, podcasts,
+              digital training, and other learning material.
+            </p>
+          </div>
+
+          <span
+            class="text-2xl text-white/30 transition-transform duration-300 group-hover:translate-x-1 group-hover:text-[#43b4ff]"
+          >
+            ↗
+          </span>
+        </div>
+      </a>
+
+      <!-- AWS Educate -->
+      <a
+        href="https://aws.amazon.com/education/awseducate"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group border-t border-white pt-8 transition-colors hover:border-[#43b4ff]"
+      >
+        <div class="flex items-start justify-between gap-6">
+          <div>
+            <p class="text-xs uppercase tracking-[0.25em] text-white/40">
+              Students
+            </p>
+
+            <h3 class="mt-4 text-3xl font-semibold tracking-tight">
+              AWS Educate
+            </h3>
+
+            <p class="mt-5 max-w-md text-base leading-7 text-white/50">
+              Academic cloud-learning resources designed to help
+              students develop AWS and cloud skills.
+            </p>
+          </div>
+
+          <span
+            class="text-2xl text-white/30 transition-transform duration-300 group-hover:translate-x-1 group-hover:text-[#43b4ff]"
+          >
+            ↗
+          </span>
+        </div>
+      </a>
+
+      <!-- Builder Center -->
+      <a
+        href="https://builder.aws.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="group border-t border-white pt-8 transition-colors hover:border-[#43b4ff]"
+      >
+        <div class="flex items-start justify-between gap-6">
+          <div>
+            <p class="text-xs uppercase tracking-[0.25em] text-white/40">
+              AWS Community
+            </p>
+
+            <h3 class="mt-4 text-3xl font-semibold tracking-tight">
+              AWS Builder Center
+            </h3>
+
+            <p class="mt-5 max-w-md text-base leading-7 text-white/50">
+              Explore AWS workshops, community content, builders,
+              events, spaces, and student-focused resources.
+            </p>
+          </div>
+
+          <span
+            class="text-2xl text-white/30 transition-transform duration-300 group-hover:translate-x-1 group-hover:text-[#43b4ff]"
+          >
+            ↗
+          </span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+  <!-- TEAM -->
+  <section 
+  id="team" 
+  class="min-h-screen bg-[#08090D] px-6 py-32 text-white" 
+> 
+  <div class="mx-auto max-w-6xl"> 
+ 
+    <p class="text-sm uppercase tracking-[0.3em] text-white/40"> 
+      Team 
+    </p> 
+ 
+    <h2 class="mt-4 text-5xl font-semibold tracking-tight md:text-6xl"> 
+      The people building SBG. 
+    </h2> 
+ 
+    <div class="mt-20 grid gap-x-8 gap-y-16 sm:grid-cols-2 lg:grid-cols-4"> 
+ 
+      <!-- Member 1 --> 
+      <div class="group"> 
+        <div class="aspect-square overflow-hidden bg-white/5"> 
+          <img 
+            src="/team/member-1.jpg" 
+            alt="Team member" 
+            class="h-full w-full object-cover transition-all duration-500" 
+          /> 
+        </div> 
+ 
+        <div class="mt-5"> 
+          <h3 class="text-xl font-semibold"> 
+            Samman Das 
+          </h3> 
+ 
+          <p class="mt-1 text-sm text-white/40"> 
+            Leader
+          </p> 
+        </div> 
+      </div> 
+ 
+      <!-- Member 2 --> 
+      <div class="group"> 
+        <div class="aspect-square overflow-hidden bg-white/5"> 
+          <img 
+            src="/team/member-2.jpeg" 
+            alt="Team member" 
+            class="h-full w-full object-cover transition-all duration-500" 
+          /> 
+        </div> 
+ 
+        <div class="mt-5"> 
+          <h3 class="text-xl font-semibold"> 
+            Adrija Sil 
+          </h3> 
+ 
+          <p class="mt-1 text-sm text-white/40"> 
+            Technical Coordinator
+          </p> 
+        </div> 
+      </div> 
+ 
+      <!-- Member 3 --> 
+      <div class="group"> 
+        <div class="aspect-square overflow-hidden bg-white/5"> 
+          <img 
+            src="/team/member-3.jpeg" 
+            alt="Team member" 
+            class="h-full w-full object-cover transition-all duration-500" 
+          /> 
+        </div> 
+ 
+        <div class="mt-5"> 
+          <h3 class="text-xl font-semibold"> 
+            Rishita Sarkar 
+          </h3> 
+ 
+          <p class="mt-1 text-sm text-white/40"> 
+            Community Coordinator
+          </p> 
+        </div> 
+      </div>
+
+      <!-- Member 4 --> 
+      <div class="group"> 
+        <div class="aspect-square overflow-hidden bg-white/5"> 
+          <img 
+            src="/team/member-4.jpeg" 
+            alt="Team member" 
+            class="h-full w-full object-cover transition-all duration-500" 
+          /> 
+        </div> 
+ 
+        <div class="mt-5"> 
+          <h3 class="text-xl font-semibold"> 
+            Debjyoti Barik
+          </h3> 
+ 
+          <p class="mt-1 text-sm text-white/40"> 
+            Event Coordinator
+          </p> 
+        </div> 
+      </div>
+ 
+    </div> 
+ 
+  </div> 
+</section>
+
+</main>
+<router-outlet />
+<app-footer />
